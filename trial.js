@@ -175,7 +175,7 @@ d3.csv('https://stephenimhoff.github.io/416website/Networth-Levels-Final.csv').t
 
   function explore(){
 
-    location.href = "dashboardv2.html:";
+    location.href = "dashboardv2.html";
   }
   
   function update() {
