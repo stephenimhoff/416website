@@ -211,8 +211,8 @@ const line = d3.line()
     svg.append("path")
     .datum(data)
     .attr("fill", "none")
-    .attr("class", "yellow-line")
-    .attr("stroke", "yellow")
+    .attr("class", "gold-line")
+    .attr("stroke", "gold")
     .attr("stroke-width", 2)
     .attr("d", line3);
 
@@ -276,7 +276,7 @@ svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "gre
 svg.append("text").attr("x", 60).attr("y", 0).text("Bottom 50%").style("font-size", "15px").attr("alignment-baseline","middle")
 svg.append("text").attr("x", 60).attr("y", 30).text("Top 0.1%").style("font-size", "15px").attr("alignment-baseline","middle")
 svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
 svg.append("circle").attr("cx",40).attr("cy",120).attr("r", 6).style("fill", "purple")
 svg.append("text").attr("x", 60).attr("y", 60).text("50-90%").style("font-size", "15px").attr("alignment-baseline","middle")
 svg.append("text").attr("x", 60).attr("y", 90).text("90-99%").style("font-size", "15px").attr("alignment-baseline","middle")
@@ -341,11 +341,11 @@ function update(selectedGroup) {
                 svg.append("text").attr("x", 60).attr("y", 0).text("Bottom 50%").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("Top 0.1%").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
                 svg.append("circle").attr("cx",40).attr("cy",120).attr("r", 6).style("fill", "purple")
                 
                 svg.append("text").attr("x", 60).attr("y", 60).text("50-90%").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
-                svg.append("text").attr("x", 60).attr("y", 90).text("90-99%").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "yellowcirc")
+                svg.append("text").attr("x", 60).attr("y", 90).text("90-99%").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "goldcirc")
                 svg.append("text").attr("x", 60).attr("y", 120).text("99-99.9%").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "purplecirc")
                 //populate new lines/colors
                 svg.append("path")
@@ -360,8 +360,8 @@ function update(selectedGroup) {
             svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("class", "yellow-line")
-            .attr("stroke", "yellow")
+            .attr("class", "gold-line")
+            .attr("stroke", "gold")
             .attr("stroke-width", 2)
             .attr("d", line3);
 
@@ -398,14 +398,14 @@ function update(selectedGroup) {
                 svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
                 svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
                 svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
                 svg.append("circle").attr("cx",40).attr("cy",120).attr("r", 6).style("fill", "purple")
                 svg.append("circle").attr("cx",40).attr("cy",150).attr("r", 6).style("fill", "navy")
 
                 svg.append("text").attr("x", 60).attr("y", 0).text("99th-100th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("80th-99th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("60th-80th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
-                svg.append("text").attr("x", 60).attr("y", 90).text("40th-60th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "yellowcirc")
+                svg.append("text").attr("x", 60).attr("y", 90).text("40th-60th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "goldcirc")
                 svg.append("text").attr("x", 60).attr("y", 120).text("20th-40th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "purplecirc")
                 
                 svg.append("text").attr("x", 60).attr("y", 150).text("0-20th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "navycirc")
@@ -457,8 +457,8 @@ function update(selectedGroup) {
             svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("class", "yellow-line")
-            .attr("stroke", "yellow")
+            .attr("class", "gold-line")
+            .attr("stroke", "gold")
             .attr("stroke-width", 2)
             .attr("d", line4060);
 
@@ -490,14 +490,14 @@ function update(selectedGroup) {
                 svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
                 svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
                 svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
                 
 
 
                 svg.append("text").attr("x", 60).attr("y", 0).text("College").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("Some College").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("High School").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
-                svg.append("text").attr("x", 60).attr("y", 90).text("No High School").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "yellowcirc")
+                svg.append("text").attr("x", 60).attr("y", 90).text("No High School").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "goldcirc")
                
                 //update title
 
@@ -547,8 +547,8 @@ function update(selectedGroup) {
             svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("class", "yellow-line")
-            .attr("stroke", "yellow")
+            .attr("class", "gold-line")
+            .attr("stroke", "gold")
             .attr("stroke-width", 2)
             .attr("d", linenohs);
 
@@ -562,7 +562,7 @@ function update(selectedGroup) {
                 svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
                 svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
                 svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
                 
 
 
@@ -570,7 +570,7 @@ function update(selectedGroup) {
                 svg.append("text").attr("x", 60).attr("y", 0).text("70+").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("55-69").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("40-54").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
-                svg.append("text").attr("x", 60).attr("y", 90).text("<40").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "yellowcirc")
+                svg.append("text").attr("x", 60).attr("y", 90).text("<40").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "goldcirc")
                
                 //update title
 
@@ -620,8 +620,8 @@ function update(selectedGroup) {
             svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("class", "yellow-line")
-            .attr("stroke", "yellow")
+            .attr("class", "gold-line")
+            .attr("stroke", "gold")
             .attr("stroke-width", 2)
             .attr("d", line40);
                 
@@ -635,13 +635,13 @@ function update(selectedGroup) {
                 svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
                 svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
                 svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
 
 
                 svg.append("text").attr("x", 60).attr("y", 0).text("Silent Generation").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("Baby Boomers").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("Gen X").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
-                svg.append("text").attr("x", 60).attr("y", 90).text("Millennials").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "yellowcirc")
+                svg.append("text").attr("x", 60).attr("y", 90).text("Millennials").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "goldcirc")
                
                 //update title
 
@@ -691,8 +691,8 @@ function update(selectedGroup) {
             svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("class", "yellow-line")
-            .attr("stroke", "yellow")
+            .attr("class", "gold-line")
+            .attr("stroke", "gold")
             .attr("stroke-width", 2)
             .attr("d", linem);
                 
@@ -706,13 +706,13 @@ function update(selectedGroup) {
                 svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
                 svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
                 svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
 
 
                 svg.append("text").attr("x", 60).attr("y", 0).text("White").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("Hispanic").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("Black").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
-                svg.append("text").attr("x", 60).attr("y", 90).text("Other").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "yellowcirc")
+                svg.append("text").attr("x", 60).attr("y", 90).text("Other").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "goldcirc")
                
                 //update title
 
@@ -762,8 +762,8 @@ function update(selectedGroup) {
             svg.append("path")
             .datum(data)
             .attr("fill", "none")
-            .attr("class", "yellow-line")
-            .attr("stroke", "yellow")
+            .attr("class", "gold-line")
+            .attr("stroke", "gold")
             .attr("stroke-width", 2)
             .attr("d", lineother);
             }
