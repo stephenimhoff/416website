@@ -288,6 +288,7 @@ function reset() {
     d3.selectAll("path").remove();
     svg.selectAll(".myYaxis").remove();
     d3.selectAll("text").remove();
+    d3.selectAll("circle").remove();
 
     x = d3.scaleTime()
           .domain(d3.extent(data, d => d.dates))
@@ -316,6 +317,15 @@ function update(selectedGroup) {
                 //remove all other lines
                 svg.selectAll(".myYaxis").remove();
                 d3.selectAll("path").remove();
+
+                svg.append("text")
+                .attr("class", "chart-title")
+                .attr("x", margin.left - 115)
+                .attr("y", margin.top - 100)
+                .style("font-size", "24px")
+                .style("font-weight", "bold")
+                .style("font-family", "sans-serif")
+                .text("Wealth disparities have grown");
                 
                 //reset x and y axis
                 y = d3.scaleLinear()
@@ -385,13 +395,19 @@ function update(selectedGroup) {
                 reset();
 
                 //update legend
+                svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
+                svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
+                svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                svg.append("circle").attr("cx",40).attr("cy",120).attr("r", 6).style("fill", "purple")
+                svg.append("circle").attr("cx",40).attr("cy",150).attr("r", 6).style("fill", "navy")
 
                 svg.append("text").attr("x", 60).attr("y", 0).text("99th-100th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("80th-99th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("60th-80th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
                 svg.append("text").attr("x", 60).attr("y", 90).text("40th-60th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "yellowcirc")
                 svg.append("text").attr("x", 60).attr("y", 120).text("20th-40th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "purplecirc")
-                svg.append("circle").attr("cx",40).attr("cy",150).attr("r", 6).style("fill", "navy")
+                
                 svg.append("text").attr("x", 60).attr("y", 150).text("0-20th Percentile").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "navycirc")
                 //update title
 
@@ -471,6 +487,13 @@ function update(selectedGroup) {
 
                 //update legend
 
+                svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
+                svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
+                svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                
+
+
                 svg.append("text").attr("x", 60).attr("y", 0).text("College").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("Some College").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("High School").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
@@ -536,6 +559,13 @@ function update(selectedGroup) {
                 reset();
 
                 //update legend
+                svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
+                svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
+                svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+                
+
+
 
                 svg.append("text").attr("x", 60).attr("y", 0).text("70+").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("55-69").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
@@ -602,6 +632,12 @@ function update(selectedGroup) {
 
                 //update legend
 
+                svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
+                svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
+                svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+
+
                 svg.append("text").attr("x", 60).attr("y", 0).text("Silent Generation").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("Baby Boomers").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
                 svg.append("text").attr("x", 60).attr("y", 60).text("Gen X").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "redcirc")
@@ -667,6 +703,11 @@ function update(selectedGroup) {
                 reset();
 
                 //update legend
+                svg.append("circle").attr("cx",40).attr("cy",0).attr("r", 6).style("fill", "steelblue")
+                svg.append("circle").attr("cx",40).attr("cy",30).attr("r", 6).style("fill", "green")
+                svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
+                svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+
 
                 svg.append("text").attr("x", 60).attr("y", 0).text("White").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "bluecirc")
                 svg.append("text").attr("x", 60).attr("y", 30).text("Hispanic").style("font-size", "15px").attr("alignment-baseline","middle").attr("class", "greencirc")
