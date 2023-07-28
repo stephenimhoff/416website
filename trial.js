@@ -88,8 +88,8 @@ d3.csv('https://stephenimhoff.github.io/416website/Networth-Levels-Final.csv').t
     svg.append("path")
     .datum(data)
     .attr("fill", "none")
-    .attr("class", "yellow-line")
-    .attr("stroke", "yellow")
+    .attr("class", "gold-line")
+    .attr("stroke", "gold")
     .attr("stroke-width", 2)
     .attr("d", line3);
 
@@ -160,7 +160,7 @@ d3.csv('https://stephenimhoff.github.io/416website/Networth-Levels-Final.csv').t
   svg.append("text").attr("x", 60).attr("y", 0).text("Bottom 50%").style("font-size", "15px").attr("alignment-baseline","middle")
   svg.append("text").attr("x", 60).attr("y", 30).text("Top 0.1%").style("font-size", "15px").attr("alignment-baseline","middle")
   svg.append("circle").attr("cx",40).attr("cy",60).attr("r", 6).style("fill", "red")
-  svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "yellow")
+  svg.append("circle").attr("cx",40).attr("cy",90).attr("r", 6).style("fill", "gold")
   svg.append("circle").attr("cx",40).attr("cy",120).attr("r", 6).style("fill", "purple")
   svg.append("text").attr("x", 60).attr("y", 60).text("50-90%").style("font-size", "15px").attr("alignment-baseline","middle")
   svg.append("text").attr("x", 60).attr("y", 90).text("90-99%").style("font-size", "15px").attr("alignment-baseline","middle")
@@ -202,7 +202,7 @@ d3.csv('https://stephenimhoff.github.io/416website/Networth-Levels-Final.csv').t
         .call(d3.axisLeft(y));
 
 
-        svg.select(".yellow-line")
+        svg.select(".gold-line")
         .datum(data)
         .transition()
         .duration(3000)
@@ -264,7 +264,7 @@ d3.csv('https://stephenimhoff.github.io/416website/Networth-Levels-Final.csv').t
         .range([height, 0]);
   
       // Update the lines with the new y scale
-      svg.select(".yellow-line")
+      svg.select(".gold-line")
       .datum(data)
       .transition()
       .duration(3000)
